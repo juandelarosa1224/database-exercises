@@ -12,3 +12,10 @@ CREATE TABLE albums(
   sales FLOAT,
   genre VARCHAR(50)
 );
+
+USE codeup_test_db;
+
+DESCRIBE albums;
+
+ALTER TABLE albums
+ADD UNIQUE (name, artist);
